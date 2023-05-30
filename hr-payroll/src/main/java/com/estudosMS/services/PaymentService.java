@@ -4,21 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-
 import com.estudosMS.entites.Payment;
 import com.estudosMS.entites.Worker;
+import com.estudosMS.feingclients.WorkerFeingClient;
 
 @Service
 public class PaymentService {
-	
-	@Value("${hr-worker.host}")
-	private String workerHost;
-	
+		
 	@Autowired
-	private RestTemplate restTemplate;
+	private WorkerFeingClient workerfeingClient;
 	
 	
 	public Payment getPayment (Long workedId, int days) {
@@ -27,8 +22,7 @@ public class PaymentService {
 		uriVariables.put("id", ""+workedId);
 		
 					
-		Worker worker =restTemplate.getForObject(workerHost + "/workers/{id}",Worker.class,uriVariables);
-		
+		Worker worker = workerfeingClient.findById(workedId).getBody();
 		return new Payment(worker.getName(),worker.getDailyIncome(),days);
 		
 	}
