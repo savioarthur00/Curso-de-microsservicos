@@ -5305,3 +5305,92 @@ Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotati
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
 	... 22 more
+
+!ENTRY org.springframework.ide.eclipse.boot.properties.editor 4 0 2023-05-30 21:26:43.719
+!MESSAGE javax/inject/Provider
+!STACK 0
+java.lang.NoClassDefFoundError: javax/inject/Provider
+	at org.springframework.ide.eclipse.boot.properties.editor.util.TypedProperty.<init>(TypedProperty.java:46)
+	at org.springframework.ide.eclipse.boot.properties.editor.util.TypeUtil.getProperties(TypeUtil.java:669)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.dotNavigate(PropertyNavigator.java:201)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.navigate(PropertyNavigator.java:83)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.dotNavigate(PropertyNavigator.java:191)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.navigate(PropertyNavigator.java:83)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.SpringPropertiesReconcileEngine.reconcile(SpringPropertiesReconcileEngine.java:128)
+	at org.springframework.ide.eclipse.editor.support.reconcile.ReconcileStrategy.reconcile(ReconcileStrategy.java:88)
+	at org.springframework.ide.eclipse.editor.support.reconcile.ReconcileStrategy.initialReconcile(ReconcileStrategy.java:59)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:98)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+Caused by: java.lang.ClassNotFoundException: javax.inject.Provider cannot be found by org.springframework.ide.eclipse.editor.support_3.9.10.201909171046-RELEASE
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 11 more
+
+!ENTRY org.springframework.ide.eclipse.boot.properties.editor 4 0 2023-05-30 21:26:45.759
+!MESSAGE javax/inject/Provider
+!STACK 0
+java.lang.NoClassDefFoundError: javax/inject/Provider
+	at org.springframework.ide.eclipse.boot.properties.editor.util.TypedProperty.<init>(TypedProperty.java:46)
+	at org.springframework.ide.eclipse.boot.properties.editor.util.TypeUtil.getProperties(TypeUtil.java:669)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.dotNavigate(PropertyNavigator.java:201)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.navigate(PropertyNavigator.java:83)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.dotNavigate(PropertyNavigator.java:191)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.navigate(PropertyNavigator.java:83)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.SpringPropertiesReconcileEngine.reconcile(SpringPropertiesReconcileEngine.java:128)
+	at org.springframework.ide.eclipse.editor.support.reconcile.ReconcileStrategy.reconcile(ReconcileStrategy.java:88)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+Caused by: java.lang.ClassNotFoundException: javax.inject.Provider cannot be found by org.springframework.ide.eclipse.editor.support_3.9.10.201909171046-RELEASE
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 10 more
+
+!ENTRY org.springframework.ide.eclipse.boot.properties.editor 4 0 2023-05-30 21:26:52.771
+!MESSAGE javax/inject/Provider
+!STACK 0
+java.lang.NoClassDefFoundError: javax/inject/Provider
+	at org.springframework.ide.eclipse.boot.properties.editor.util.TypedProperty.<init>(TypedProperty.java:46)
+	at org.springframework.ide.eclipse.boot.properties.editor.util.TypeUtil.getProperties(TypeUtil.java:669)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.dotNavigate(PropertyNavigator.java:201)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.navigate(PropertyNavigator.java:83)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.dotNavigate(PropertyNavigator.java:191)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.navigate(PropertyNavigator.java:83)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.SpringPropertiesReconcileEngine.reconcile(SpringPropertiesReconcileEngine.java:128)
+	at org.springframework.ide.eclipse.editor.support.reconcile.ReconcileStrategy.reconcile(ReconcileStrategy.java:88)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+Caused by: java.lang.ClassNotFoundException: javax.inject.Provider cannot be found by org.springframework.ide.eclipse.editor.support_3.9.10.201909171046-RELEASE
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 10 more
+
+!ENTRY org.springframework.ide.eclipse.boot.properties.editor 4 0 2023-05-30 21:26:54.780
+!MESSAGE javax/inject/Provider
+!STACK 0
+java.lang.NoClassDefFoundError: javax/inject/Provider
+	at org.springframework.ide.eclipse.boot.properties.editor.util.TypedProperty.<init>(TypedProperty.java:46)
+	at org.springframework.ide.eclipse.boot.properties.editor.util.TypeUtil.getProperties(TypeUtil.java:669)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.dotNavigate(PropertyNavigator.java:201)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.navigate(PropertyNavigator.java:83)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.dotNavigate(PropertyNavigator.java:191)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.PropertyNavigator.navigate(PropertyNavigator.java:83)
+	at org.springframework.ide.eclipse.boot.properties.editor.reconciling.SpringPropertiesReconcileEngine.reconcile(SpringPropertiesReconcileEngine.java:128)
+	at org.springframework.ide.eclipse.editor.support.reconcile.ReconcileStrategy.reconcile(ReconcileStrategy.java:88)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+Caused by: java.lang.ClassNotFoundException: javax.inject.Provider cannot be found by org.springframework.ide.eclipse.editor.support_3.9.10.201909171046-RELEASE
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 10 more
