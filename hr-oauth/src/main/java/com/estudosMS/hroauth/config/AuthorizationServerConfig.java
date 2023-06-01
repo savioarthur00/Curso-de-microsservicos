@@ -49,7 +49,7 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
 		secret(passwordEncoder.encode("myappsecret123")).
 		scopes("read","write").
 		authorizedGrantTypes("password")
-		.accessTokenValiditySeconds(86400);
+		.accessTokenValiditySeconds(86400); 
 	}
 
 	@Override
