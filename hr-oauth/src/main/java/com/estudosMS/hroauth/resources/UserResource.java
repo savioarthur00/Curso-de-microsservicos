@@ -12,13 +12,14 @@ import com.estudosMS.hroauth.entities.User;
 import com.estudosMS.hroauth.services.UserService;
 
 
+
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
 
 	@Autowired
 	private UserService service;
-
+	
 	@GetMapping(value = "/search")
 	public ResponseEntity<User> findByEmail(@RequestParam String email) {
 		try {
