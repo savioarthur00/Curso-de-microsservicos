@@ -157,7 +157,6 @@ INDEX VERSION 1.131+D:\STS\Documentos\.metadata\.plugins\org.eclipse.jdt.core
 1792781053.index
 3580124896.index
 2553097356.index
-652727814.index
 1425269055.index
 1990234788.index
 728167658.index
