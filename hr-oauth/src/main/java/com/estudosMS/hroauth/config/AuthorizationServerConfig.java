@@ -1,6 +1,7 @@
 package com.estudosMS.hroauth.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -34,7 +35,10 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
 	private AuthenticationManager authenticationManager;
 	
 	
-	
+	@Value("${oauth.client.name}")
+	private String client_name;
+	@Value("${oauth.client.secret}")
+	private String client_secret;
 	 
 	
 
@@ -45,8 +49,8 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
 
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-		clients.inMemory().withClient("myappname123").
-		secret(passwordEncoder.encode("myappsecret123")).
+		clients.inMemory().withClient(client_name).
+		secret(passwordEncoder.encode(client_secret)).	
 		scopes("read","write").
 		authorizedGrantTypes("password")
 		.accessTokenValiditySeconds(86400); 
